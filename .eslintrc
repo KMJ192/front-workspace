@@ -41,10 +41,8 @@
     "import/named": 0,
     "import/extensions": 0,
 
-    // js/ts coding convention
     "linebreak-style": 0,
     "global-require": 0,
-    // "jsx-quotes": ["warning", "prefer-single"],
     "no-use-before-define": 0,
     "no-shadow": 0,
     "no-empty-pattern": 0,
@@ -52,7 +50,6 @@
     "prefer-const": 1,
     "no-plusplus": 0,
 
-    // react
     "react/jsx-props-no-spreading": 0,
     "react/forbid-prop-types": 0,
     "react/jsx-filename-extension": [
@@ -65,14 +62,12 @@
     "react-hooks/exhaustive-deps": 1,
     "react/destructuring-assignment": 0,
 
-    // jsx
     "jsx-a11y/label-has-associated-control": 0,
     "jsx-a11y/click-events-have-key-events": 0,
     "jsx-a11y/no-static-element-interactions": 0,
     "jsx-a11y/no-noninteractive-element-interactions": 0,
     "react/no-array-index-key": 0,
 
-    // else
     "no-alert": 1,
     "no-console": 1,
     "no-lonely-if": 0
@@ -80,9 +75,6 @@
   "settings": { 
     "import/parsers": {
       "@typescript-eslint/parser": [".ts", ".tsx", ".js", "jsx"] 
-    }, 
-    "import/resolver": { 
-      "typescript": "./tsconfig.json" 
     }
   }
 }
