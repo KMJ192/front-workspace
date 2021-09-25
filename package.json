@@ -54,7 +54,8 @@
   "scripts": {
     "build-pack:all": "yarn workspace @front-workspace/application build && yarn workspace @front-workspace/react-storybook build",
     "reinstall": "rm -rf node_modules apps/application/node_modules packages/ui/react-storybook/node_modules && yarn",
-    "clear": "rm -rf node_modules apps/application/node_modules packages/ui/react-storybook/node_modules",
+    "clear:node_modules": "rm -rf node_modules apps/application/node_modules packages/ui/react-storybook/node_modules",
+    "clear:build": "rm -rf apps/application/dist packages/ui/react-storybook/build",
     "start:application": "yarn workspace @front-workspace/application start",
     "start:react-storybook": "yarn workspace @front-workspace/react-storybook start"
   }
