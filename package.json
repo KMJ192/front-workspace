@@ -48,7 +48,9 @@
       "**/@rollup",
       "**/@rollup/**",
       "**/postcss*",
-      "**/resolve-url-loader*"
+      "**/resolve-url-loader*",
+      "**/@storybook",
+      "**/@storybook/**"
     ]
   },
   "scripts": {
