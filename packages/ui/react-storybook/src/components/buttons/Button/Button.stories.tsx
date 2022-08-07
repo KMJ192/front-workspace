@@ -1,6 +1,8 @@
 import React from 'react';
 
-import Button, { ButtonType } from './Button';
+import Button from './Button';
+
+import { buttonType } from './types';
 
 export default {
   title: 'Button',
@@ -11,9 +13,9 @@ export default {
 };
 
 export const primaryButton = (): JSX.Element => {
-  return <Button theme={ButtonType.PRIMARY}>primary btn</Button>;
+  return <Button theme={buttonType.PRIMARY}>primary btn</Button>;
 };
 
 export const secondaryButton = (): JSX.Element => {
-  return <Button theme={ButtonType.SECONDARY}>secondary btn</Button>;
+  return <Button theme={buttonType.SECONDARY}>secondary btn</Button>;
 };
