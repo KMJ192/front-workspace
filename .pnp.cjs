@@ -48,6 +48,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         [null, {\
           "packageLocation": "./",\
           "packageDependencies": [\
+            ["@types/node", "npm:18.7.14"],\
             ["@types/react", "npm:18.0.18"],\
             ["@types/react-dom", "npm:18.0.6"],\
             ["@typescript-eslint/eslint-plugin", "virtual:fbf57de08039d0f0a42745eebf3b66adef7094f3a4c6115cc686744418028547d137c25a93563aa6d7935dd61e89dce7439dcb4990cdea2b0d6c4476bb12b9f4#npm:5.36.1"],\
@@ -12337,6 +12338,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",\
           "packageDependencies": [\
             ["front-workspace", "workspace:."],\
+            ["@types/node", "npm:18.7.14"],\
             ["@types/react", "npm:18.0.18"],\
             ["@types/react-dom", "npm:18.0.6"],\
             ["@typescript-eslint/eslint-plugin", "virtual:fbf57de08039d0f0a42745eebf3b66adef7094f3a4c6115cc686744418028547d137c25a93563aa6d7935dd61e89dce7439dcb4990cdea2b0d6c4476bb12b9f4#npm:5.36.1"],\

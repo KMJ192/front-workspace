@@ -4,14 +4,10 @@
     "es6": true,
     "node": true
   },
-  "parser": "@typescript-eslint/parser",
-  "plugins": ["@typescript-eslint","import"],
   "extends": [
     "airbnb",
     "airbnb/hooks",
-    "prettier",
-    "plugin:@typescript-eslint/recommended",
-    "plugin:prettier/recommended"
+    "prettier"
   ],
   "globals": {
     "Atomics": "readonly",
@@ -25,6 +21,7 @@
     }
   },
   "rules": {
+    "import/no-relative-packages": 0,
     "import/no-dynamic-require": 0,
     "import/no-unresolved": 0,
     "import/no-duplicates": 0,
@@ -72,9 +69,33 @@
     "no-console": 1,
     "no-lonely-if": 0
   },
-  "settings": { 
-    "import/parsers": {
-      "@typescript-eslint/parser": [".ts", ".tsx", ".js", "jsx"] 
+  "overrides": [
+    {
+      "files": ["**/*.ts", "**/*.tsx"],
+      "plugins": ["@typescript-eslint", "import"],
+      "parser": "@typescript-eslint/parser",
+      "parserOptions": {
+        "ecmaVersion": 2022,
+        "sourceType": "module",
+        "ecmaFeatures": {
+          "jsx": true
+        }
+      },
+      "extends": [
+        "plugin:@typescript-eslint/recommended",
+        "plugin:prettier/recommended"
+      ],
+      "rules": {
+        "react/react-in-jsx-scope": 0
+      },
+      "settings": { 
+        "import/parsers": {
+          "@typescript-eslint/parser": [".ts", ".tsx"] 
+        },
+        "import/resolver": {
+          "typescript": "./tsconfig.json"
+        }
+      }
     }
-  }
+  ]
 }
