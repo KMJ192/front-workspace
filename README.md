@@ -1,9 +1,10 @@
 # workspace bolier-plate
 
-### tech stack
+### stack
 - react
+- nextjs
 - storybook
-- webpack
+- vite
 - rollup
 - eslint
 - babel
