@@ -1,0 +1,15 @@
+@import '@styles/module.scss';
+
+.header {
+  padding: 8px $global-padding;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e3f2fd;
+  color: #007bff;
+  .left {
+    display: flex;
+    gap: 24px;
+  }
+}
+
