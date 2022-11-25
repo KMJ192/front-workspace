@@ -1,5 +1,3 @@
-import React from 'react';
-
 import { buttonType } from './types';
 
 import classNames from 'classnames/bind';
