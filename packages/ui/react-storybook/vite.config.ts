@@ -36,6 +36,8 @@ const config = ({ mode }: any) => {
       rollupOptions: {
         external: ['react', 'react-dom'],
         output: {
+          // preserveModules: true,
+          // inlineDynamicImports: false,
           globals: {
             react: 'React',
             'react-dom': 'ReactDOM',
