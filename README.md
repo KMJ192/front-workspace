@@ -1,5 +1,6 @@
 # workspace bolier-plate
 
+- workspace 템플릿 
 ### stack
 - react
 - nextjs
